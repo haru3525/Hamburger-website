@@ -1,0 +1,21 @@
+/* 絶対配置中央揃え */
+@mixin center-pos {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+
+/* 変数でブレイクポイントを設定 */
+$mq-breakpoints: (
+  'sm': 'screen and (max-width: 767px)',
+  'md': 'screen and (max-width: 1000px)',
+  'xl': 'screen and (min-width: 1280px)',
+);
+
+/* mixinで定義  基準はsm */
+@mixin mq($breakpoint: sm) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
