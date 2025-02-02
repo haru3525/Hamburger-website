@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+@use "../global/forwards" as fw;
+
+.l-pc-header {
+  background-color: fw.$bg-accent;
+  font-size: 100px;
+}
