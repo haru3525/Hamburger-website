@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet"> -->
 
     <!-- css -->
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
 
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -29,14 +29,26 @@
  
 <body>
     <header class="l-header">
-        <button class="c-header__menu is-active">Menu</button>
-        <h1 class="l-header__title">Hamburger</h1>
-        <form class="c-form">
-            <input class="c-form__search" type="search" name="s" placeholder="キーワードを入力">
+        <button class="c-header-menu__button js-menu">Menu</button>
+        <h1 class="c-header-title">Hamburger</h1>
+        <form class="c-header-form" method="get" action="#">
+            <input class="c-header-form__text" type="text" size="25">
+            <input class="c-header-form__submit" type="submit" value="検索">
 	    </form>
-	    <input type="submit" value="検索する" />
     </header>
+    <main class="l-main">
+        <div class="c-main__mainvisual">
+            <img src="images\mainvisual-sp@2x.jpg" alt="Hamburger shop">
+            <h2 class="c-main__mainvisual__title">Hamburger</h2>
+        </div>
 
+        <!-- <div class="l-main__inner-width-sp"> -->
+            
 
+            
+
+        </div>
+
+    </main>
 </body>
 </html>

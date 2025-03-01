@@ -1,0 +1,9 @@
+@use "../foundation/variable" as *;
+@use "../foundation/mixin" as *;
+
+.c-header-menu {
+  &__button {
+    font-family: $roboto;
+    font-size: 200px;
+  }
+}
